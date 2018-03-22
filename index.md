@@ -176,7 +176,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-             <span class="rounded-circle mx-auto mb-3"><img style="height: 120px;" src="img/logo4.png"></span>
+             <span class="rounded-circle mx-auto mb-3"><img style="height: 112px;" src="img/logo4.png"></span>
           </div>
 
           <div class="col-lg-3 col-md-6">
