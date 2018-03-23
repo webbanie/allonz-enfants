@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Template</title>
+    <title>Allon'z enfants de la balle</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
     <nav id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+          <a class="js-scroll-trigger" href="#page-top">Menu</a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#page-top">Home</a>
@@ -41,13 +41,7 @@
           <a class="js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#services">Services</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#contact">Contact</a>
+          <a class="js-scroll-trigger" href="#exercices">Exercices</a>
         </li>
       </ul>
     </nav>
@@ -60,86 +54,57 @@
         </h1>
       </div>
       
-      <!--<img class="img-header-01" style="margin-top: 0;position: absolute;top: 0;width: 100%;z-index: -1;height: 100%;"src="img/bg-masthead.jpg" alt="">-->
 
+      <!--<video autoplay="" loop="false" muted="false" poster="screenshot.jpg" id="background" style="position:  absolute;z-index: 1000;top:  0;left: 0;height: 100%;margin: 0 auto;">
+        <source src="https://player.vimeo.com/external/169709276.hd.mp4?s=542d69d8492f8a9520258d50aa81869eeafe670d&amp;profile_id=119" type="video/mp4">
+      </video>
+      <img class="img-header-01" style="margin-top: 0;position: absolute;top: 0;width: 100%;z-index: -1;height: 100%;"src="img/bg-masthead.jpg" alt="">
       <div class="overlay">
         <img class="img-header-01" style="margin-top: 60px;" src="img/image31.png" alt="">
-      </div>
+      </div>-->
 
     </header>
 
-    <!-- Portfolio -->
-    <section class="content-section" id="portfolio">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCenter">
+  X
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- exercices -->
+    <section class="content-section" id="exercices">
       <div class="container">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">LE KIT PÉDAGOGIQUE</h3>
           <h2 class="mb-5">LE KIT PÉDAGOGIQUE</h2>
         </div>
-        <div class="row no-gutters">
-          <div class="col-lg-4">
-            <a class="portfolio-item" href="#">
+        <div class="row no-gutters" id="pop-Ups">
+
+          <div class="col-lg-4  col-md-6" v-for="item in items">
+            <a class="exercices-item" href="#">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Stationary</h2>
-                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                  <h2>{{ item.title }}</h2>
+                  <p class="mb-0">{{ item.message }}</p>
                 </span>
               </span>
-              <img class="img-fluid" src="img/image25.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-4">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Ice Cream</h2>
-                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/image4.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-4">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Strawberries</h2>
-                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/image32.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-4">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Workspace</h2>
-                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/image16.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-4">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Workspace</h2>
-                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/image1.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-4">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Workspace</h2>
-                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/image25.jpg" alt="">
+              <img class="img-fluid" v-bind:src="'img/' + item.image + '.jpg'" alt="">
             </a>
           </div>
         </div>
@@ -151,7 +116,7 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+            <h2>Stylish exercices is the perfect theme for your next project!</h2>
             <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
               <a href="https://unsplash.com/">Unsplash</a>!</p>
             <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Télécharger le kit</a>
@@ -207,6 +172,8 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
