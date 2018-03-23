@@ -87,13 +87,13 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead - Copie.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-//background-position: top left;
-//background-repeat: repeat;
-//background-size: unset;
+  //background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  //background-position: center center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+background-position: top left;
+background-repeat: repeat;
+background-size: unset;
 }
 
 .masthead h1 {
@@ -231,7 +231,7 @@ h6 {
   max-width: 30rem;
 }
 
-.portfolio-item {
+.exercices-item {
   display: block;
   position: relative;
   overflow: hidden;
@@ -239,7 +239,7 @@ h6 {
   margin: auto auto 1rem;
 }
 
-.portfolio-item .caption {
+.exercices-item .caption {
   display: flex;
   height: 100%;
   width: 100%;
@@ -250,47 +250,47 @@ h6 {
   z-index: 1;
 }
 
-.portfolio-item .caption .caption-content {
+.exercices-item .caption .caption-content {
   color: #fff;
   margin: auto 2rem 2rem;
 }
 
-.portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
+.exercices-item .caption .caption-content h2 {
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
-.portfolio-item .caption .caption-content p {
+.exercices-item .caption .caption-content p {
   font-weight: 300;
   font-size: 1.2rem;
 }
 
 @media (min-width: 992px) {
-  .portfolio-item {
+  .exercices-item {
     max-width: none;
     margin: 0;
   }
-  .portfolio-item .caption {
+  .exercices-item .caption {
     -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
   }
-  .portfolio-item .caption .caption-content {
+  .exercices-item .caption .caption-content {
     transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
   }
-  .portfolio-item img {
+  .exercices-item img {
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
   }
-  .portfolio-item:hover img {
+  .exercices-item:hover img {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
-  .portfolio-item:hover .caption {
+  .exercices-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
