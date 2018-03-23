@@ -1,7 +1,11 @@
 (function($) {
   "use strict"; // Start of use strict
 
-});
+
+
+})(jQuery); // End of use strict
+
+
 
 $( document ).ready(function() {
   // Wrap every letter in a span
@@ -22,5 +26,57 @@ anime.timeline()
       return 40 * i;
     }
   });
-})(jQuery); // End of use strict
+});
+
+//////vue.js
+
+var app = new Vue({
+  el: '#ModalCenter',
+  data: {
+    todos: [
+      { text: 'Learn JavaScript' },
+      { text: 'Learn Vue' },
+      { text: 'Build something awesome' }
+    ]
+  }
+})
+
+var popUps = new Vue({
+  el: '#pop-Ups',
+  data: {
+    items: [
+      { 
+        title: "L'histoire du foot",
+        message: 'Une vidéo illustant la naissance du Football à nos jours',
+        image : 'image25'
+      },
+      { 
+        title: 'Stationary',
+        message: 'A yellow pencil with envelopes on a clean, blue backdrop!',
+        image : 'image4'
+      },
+      { 
+        title: 'Stationary',
+        message: 'A yellow pencil with envelopes on a clean, blue backdrop!',
+        image : 'image32'
+      },
+      { 
+        title: 'Stationary',
+        message: 'A yellow pencil with envelopes on a clean, blue backdrop!',
+        image : 'image16'
+      },
+      { 
+        title: 'Stationary',
+        message: 'A yellow pencil with envelopes on a clean, blue backdrop!',
+        image : 'image1'
+      },
+      { 
+        title: 'Stationary',
+        message: 'A yellow pencil with envelopes on a clean, blue backdrop!',
+        image : 'image25'
+      },
+      
+    ]
+  }
+})
 
