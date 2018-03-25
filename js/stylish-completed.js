@@ -1,7 +1,9 @@
 (function($) {
   "use strict"; // Start of use strict
 
-
+  jQuery(function(){
+      jQuery("#P1").YTPlayer();
+    });
 
 })(jQuery); // End of use strict
 
@@ -16,16 +18,19 @@ $('.ml7 .letters').each(function(){
 anime.timeline()
   .add({
     targets: '.ml7 .letter',
+    offset: 800,
     translateY: ["1.1em", 0],
     translateX: ["0.55em", 0],
     translateZ: 0,
     rotateZ: [180, 0],
     //duration: 750,
-    //easing: "easeOutExpo",
+    easing: "easeOutExpo",
     delay: function(el, i) {
-      return 40 * i;
+      return 70 * i;
     }
   });
+
+
 });
 
 //////vue.js
