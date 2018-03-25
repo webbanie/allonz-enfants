@@ -6,19 +6,17 @@
     });
 
 })(jQuery); // End of use strict
+//$('.ml7 .letters').css("display", "none").css("display", "inline-block");
 
-
-
-$( document ).ready(function() {
-  // Wrap every letter in a span
 $('.ml7 .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+
 });
 
-anime.timeline()
+anime.timeline({loop: false})
   .add({
+    offset: 850,
     targets: '.ml7 .letter',
-    offset: 800,
     translateY: ["1.1em", 0],
     translateX: ["0.55em", 0],
     translateZ: 0,
@@ -26,9 +24,13 @@ anime.timeline()
     //duration: 750,
     easing: "easeOutExpo",
     delay: function(el, i) {
-      return 70 * i;
+      return 60 * i;
     }
   });
+
+$( document ).ready(function() {
+  // Wrap every letter in a span
+
 
 
 });
