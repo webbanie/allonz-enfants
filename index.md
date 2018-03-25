@@ -21,6 +21,7 @@
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="css/stylish_modified.css" rel="stylesheet">
+    <link href="dist/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
 
   </head>
 
@@ -47,29 +48,27 @@
     </nav>
 
     <!-- Header -->
+
+
     <header class="masthead">
+
+      <div id="P1" class="player" 
+     data-property="{videoURL:'https://youtu.be/eZdD6oncT-4',containment:'header',startAt:0,mute:true,autoPlay:true,loop:true,opacity:.8,anchor:'top',showControls:false,useOnMobile:true}">fhdw
+      </div>
+
       <div class="text-center my-auto ml7">
         <h1 class="mb-1 text-wrapper">
           <span class="letters">Allon'z enfants de la balle</span>
         </h1>
       </div>
 
-      <div class="video-background">
-        <div class="video-foreground">
-          <iframe width="1920" height="1080" src="https://www.youtube.com/embed/-O89QTv7Kwo?playlist=-O89QTv7Kwo&loop=1;autoplay=1;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <!--<video autoplay="" loop="false" muted="false" poster="screenshot.jpg" id="background" style="position:  absolute;z-index: 1000;top:  0;left: 0;height: 100%;margin: 0 auto;">
-        <source src="https://player.vimeo.com/external/169709276.hd.mp4?s=542d69d8492f8a9520258d50aa81869eeafe670d&amp;profile_id=119" type="video/mp4">
-      </video>
-
-
       <img class="img-header-01" style="margin-top: 0;position: absolute;top: 0;width: 100%;z-index: -1;height: 100%;"src="img/bg-masthead.jpg" alt="">
 
       <div class="overlay">
         <img class="img-header-01" style="margin-top: 60px;" src="img/image31.png" alt="">
       </div>-->
+
+
 
     </header>
 
@@ -186,10 +185,11 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="js/stylish-completed.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
+    <script src="js/stylish-completed.js"></script>
+    <script src="dist/jquery.mb.YTPlayer.js"></script>
     
 
   </body>
