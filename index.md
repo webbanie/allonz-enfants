@@ -53,7 +53,7 @@
     <header class="masthead">
 
       <div id="P1" class="player" 
-     data-property="{videoURL:'https://youtu.be/eZdD6oncT-4',containment:'header',startAt:0,mute:true,autoPlay:true,loop:true,opacity:.8,anchor:'top',showControls:false,useOnMobile:true}">fhdw
+     data-property="{videoURL:'https://youtu.be/eZdD6oncT-4',containment:'header',startAt:0,mute:true,autoPlay:true,loop:true,opacity:1,anchor:'top',showControls:false,useOnMobile:true}">fhdw
       </div>
 
       <div class="text-center my-auto ml7">
