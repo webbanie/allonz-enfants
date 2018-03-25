@@ -53,12 +53,20 @@
           <span class="letters">Allon'z enfants de la balle</span>
         </h1>
       </div>
-      
+
+      <div class="video-background">
+        <div class="video-foreground">
+          <iframe width="1920" height="1080" src="https://www.youtube.com/embed/-O89QTv7Kwo?playlist=-O89QTv7Kwo&loop=1;autoplay=1;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
 
       <!--<video autoplay="" loop="false" muted="false" poster="screenshot.jpg" id="background" style="position:  absolute;z-index: 1000;top:  0;left: 0;height: 100%;margin: 0 auto;">
         <source src="https://player.vimeo.com/external/169709276.hd.mp4?s=542d69d8492f8a9520258d50aa81869eeafe670d&amp;profile_id=119" type="video/mp4">
       </video>
+
+
       <img class="img-header-01" style="margin-top: 0;position: absolute;top: 0;width: 100%;z-index: -1;height: 100%;"src="img/bg-masthead.jpg" alt="">
+
       <div class="overlay">
         <img class="img-header-01" style="margin-top: 60px;" src="img/image31.png" alt="">
       </div>-->
