@@ -58,32 +58,42 @@ var popUps = new Vue({
         image : 'image25'
       },
       { 
-        title: 'Stationary',
-        message: 'A yellow pencil with envelopes on a clean, blue backdrop!',
+        title: 'La dictée',
+        message: "Pour mémoriser et travailler l'orthographe",
         image : 'image4'
       },
       { 
-        title: 'Stationary',
-        message: 'A yellow pencil with envelopes on a clean, blue backdrop!',
+        title: 'Stop Motion',
+        message: "Ce que l'on peut faire avec un ciseau et une caméra" ,
         image : 'image32'
       },
+    ]
+  }
+})
+
+var popUps2 = new Vue({
+  el: '#pop-Ups2',
+  data: {
+    items2: [
       { 
-        title: 'Stationary',
-        message: 'A yellow pencil with envelopes on a clean, blue backdrop!',
-        image : 'image16'
+        title: 'Votre équipe de Football (JEU)',
+        message: 'Imaginer et créer à votre envie',
+        image : 'image1',
+        link : 'http://foot.banlieues-creatives.org/jeu_foot/jeu2/index.html',
       },
       { 
-        title: 'Stationary',
-        message: 'A yellow pencil with envelopes on a clean, blue backdrop!',
-        image : 'image1'
-      },
-      { 
-        title: 'Stationary',
-        message: 'A yellow pencil with envelopes on a clean, blue backdrop!',
-        image : 'image25'
+        title: 'Dessine pour les joueurs (JEU)',
+        message: 'Faire preuve de créativité et envoyer votre dessin à votre joueur favori',
+        image : 'image25',
+        link : 'http://foot.banlieues-creatives.org/jeu_foot/jeu1/page1.html',
       },
       
     ]
   }
 })
 
+var vm = new Vue({
+  data: {
+    
+  }
+})
