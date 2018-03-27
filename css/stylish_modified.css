@@ -11,16 +11,26 @@ h1, h2, h3, h4, h5, h6 {
 .bg-light {
     background-color: #f1f7fc!important;
 }
+#directional-icons{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  bottom: 50px;
+}
+#directional-icons .fa{
+  display: block;
+}
 .container {
-    padding-right: 0;
-    padding-left: 0;
+  //padding-top: 18px;
+  padding-bottom: 18px;
+  //padding: 18px 50px;
 }
 .content-section {
-    padding-top: 4rem;
+  padding-top: 3rem;padding-bottom: 2.5rem;
 }
 .modal-content {
     width: fit-content;}
-
 .content-section-heading h2, .content-section h2{
     font-size: 2rem;
     text-transform: capitalize;
@@ -28,15 +38,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .masthead {
-    height: 300px;
-    background-position-y: top;
-    overflow: hidden;
-    min-height: 27rem;
+  //height: 300px;
+  background-position-y: top;
+  overflow: hidden;
+  min-height: 27rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   }
 #exercices{
   background-color: #ffffffdb;
 }
-
+#about .container {
+    border: 2px dotted #1D809F;
+    //border-top-style: solid;
+    //border-bottom-style: solid;
+}
 .portfolio-item .caption {
   background-color: transparent;
 }
@@ -44,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
 .masthead h1 {
     color: white;
     font-family: choco;
+}
+
+.exercices-item .caption .caption-content p {
+    font-size: 1rem;
 }
 
 .img-header-01{
@@ -62,11 +82,12 @@ footer.footer {
 .ml7 .text-wrapper {
   position: relative;
   display: inline-block;
-  padding-top: .65em;
+  //padding-top: .65em;
   padding-right: 0.05em;
   padding-bottom: 0.1em;
   overflow: hidden;
   width: 100%;
+  font-size: -webkit-xxx-large;
 }
 .ml7 .letter {
   transform-origin: 0 100%;
@@ -108,12 +129,19 @@ footer.footer {
 
 
 @media (min-width: 1200px){
-  .container {
-    //max-width: 100%;
+  .col{
+    max-width: 20%;
   }
 }
 
 @media (min-width: 992px){
+  .content-section-heading h2{
+    line-height: 52px;  
+  }
+  .lead {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .portfolio-item .caption .caption-content {
     transition: opacity .25s;
     margin-left: 5rem;
@@ -121,28 +149,66 @@ footer.footer {
     margin-bottom: 5rem;
     width: 100%;
   }
-
   .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.5);
+  }
+  #pop-Ups div, #pop-Ups2 div{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .exercices-item .caption .caption-content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
   }
 }
 
 @media (max-width: 992px){
+  .col{
+    margin-bottom: 3rem !important;
+  }
+  .ml7 .text-wrapper {
+  font-size: x-large;
+  }
   .masthead {
-    height: 0;
-    min-height: 9rem;
+    //height: 0;
+    min-height: 15rem;
     padding-bottom: 1rem;
-    padding-top: 3rem;
+    padding-top: 6rem;
   }
   .masthead h1 {
-    font-size: 1.5rem;
-    padding-right: 20px !important;
-    margin-left: 20px;
+    //font-size: 1.5rem;
+    //padding-right: 20px !important;
+    //margin-left: 20px;
   }
-  .video-foreground, .video-background iframe {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
+  .content-section{
+    padding: 0 0 2.5rem 0;
   }
+  .container {
+    padding-right: 0;
+    padding-left: 0;}
+  .content-section-heading h2{
+    margin-bottom: 2rem!important;
+    border-top: 2px dotted ! important;
+    border-bottom: 2px dotted ! important;
+  }
+  #about .container {
+    border: 0;
+  }
+  .content-section .row{
+    padding: 0 30px;
+  }
+  .content-section-heading h2, .content-section h2 {
+    font-size: 1rem;
+  }
+  .lead {
+    font-size: 1.20rem;
+    margin: 0 55px;
+    text-align: justify;
+    line-height: 1.3rem;
+  }
+}
+
+@media (max-width: 400px){
+  
 }
