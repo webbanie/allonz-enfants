@@ -53,7 +53,7 @@
     <header class="masthead">
 
       <div id="P1" class="player" 
-     data-property="{videoURL:'https://youtu.be/eZdD6oncT-4',containment:'body',startAt:0,mute:true,autoPlay:true,loop:true,opacity:1,anchor:'top',showControls:false,useOnMobile:true}">
+     data-property="{videoURL:'https://youtu.be/eZdD6oncT-4',containment:'header',startAt:0,mute:true,autoPlay:true,loop:true,opacity:1,anchor:'top',showControls:false,useOnMobile:true}">
       </div>
 
       <div class="text-center my-auto ml7">
@@ -62,6 +62,10 @@
         </h1>
       </div>
 
+      <div id="directional-icons">
+        <i class="fa fa-soccer-ball-o" style="font-size:20px"> Découvrez</i>
+        <i class="  fa fa-angle-down" style="font-size:36px"></i>
+      </div>
       <!--
 
 
@@ -75,10 +79,10 @@
 
     </header>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCenter">
+<!-- Button trigger modal  -->
+<button type="button" class="btn btn-primary" id="test" data-toggle="modal" data-target="#ModalCenter">
   X
-</button> 
+</button>
 
 
 
@@ -86,9 +90,9 @@
     <section class="content-section" id="exercices">
       <div class="container">
         <div class="content-section-heading text-center">
-          <h2 class="text-secondary mb-5">Les jeux ludiques</h2>
-          <!--<h3 class="mb-0">LES JEUX LUDIQUES</h3>-->
-          <h3 class="mb-0" style="padding-bottom: 1rem;"><a class="" href="http://foot.banlieues-creatives.org/kit_allonz_enfants.pdf" target="_blank" style="font-size: 1rem;color:#343a40;">Les règles</a></h3>
+          <h2 class="text-secondary mb-5" style="border-bottom: 2px dotted #ecb807;">Les activités ludiques</h2>
+          <!--<h3 class="mb-0">LES JEUX LUDIQUES</h3>
+          <h4 class="mb-0" style="padding-bottom: 1rem;"><a class="" href="http://foot.banlieues-creatives.org/kit_allonz_enfants.pdf" target="_blank" style="font-size: 1rem;color:#343a40;">Lire le mode d'emploi</a></h4>-->
         </div>
         <div class="row no-gutters" id="pop-Ups">
 
@@ -102,14 +106,16 @@
               </span>
               <img class="img-fluid" v-bind:src="'img/' + item.image + '.jpg'" alt="">
             </a>
+
+
           </div>
 
 <!-- Modal -->
 <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content" v-for="value in object">
+    <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="ModalLongTitle">{{ value }}</h5>
+        <h5 class="modal-title" id="ModalLongTitle">hey</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -123,9 +129,9 @@
   
         </div>
 
-        <div class="row no-gutters" id="pop-Ups2">
+        <div class="row no-gutters  justify-content-center" id="pop-Ups2">
 
-          <div class="col-lg-6  col-md-6" v-for="item2 in items2">
+          <div class="col-lg-4" v-for="item2 in items2">
             <a class="exercices-item" v-bind:href="item2.link"  target="_blank">
               <span class="caption">
                 <span class="caption-content">
@@ -143,22 +149,19 @@
     <!-- About -->
     <section class="content-section bg-light" id="about">
       <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2 class="text-primary mb-5">Le kit pédagogique</h2>
+        <div class="content-section-heading text-center">
+            <h2 class="text-primary mb-5" style="border-bottom: 2px solid #1D809F;">Le kit pédagogique</h2>
+        </div>    
 
-
-              <p class="lead mb-5">Un Kit pédagogique pour regarder le foot autrement. <br>Pour analyser et dépasser les excès des «ultras» et des «tifosis».
-                <br>Pour que le FOOT reste le jeu le plus populaire et le plus aimé, et pourquoi pas le plus «aimable».
+              <p class="lead mb-4">Un Kit pédagogique pour partager le plaisir du football à tout âge, pour analyser et dépasser les excès des «ultras» et des «tifosis et pour que le FOOT reste le jeu le plus populaire et le plus aimé, et pourquoi pas le plus «aimable».
               </p>
 
-              <p class="lead mb-5">A votre disposition, ce kit pédagogique composé de : <em style="font-weight:  normal;">4 spots, 2 jeux interactifs et 1 dictée</em>. 
-              <br>Vous pouvez tous les utiliser ou pas, les organiser à votre guise, en fonction de votre emploi du temps, de votre classe composée ou non de «fanas».</p>
+              <p class="lead mb-4">A votre disposition, ce kit pédagogique est composé de : 4 spots / 2 jeux interactifs / 1 dictée.</p> 
+              <p class="lead mb-4">Vous pouvez tous les utiliser ou les organiser à votre guise, en fonction de votre emploi du temps et de votre classe composée ou non de «fanas».</p>
 
-              <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Télécharger le kit</a>
+              <a class="btn btn-dark btn-xl js-scroll-trigger" style="margin-top: 30px;" href="#services">Télécharger le kit</a>
 
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
@@ -173,27 +176,26 @@
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0">LES CONTRIBUTEURS</h3>
         </div>
-        <div class="row" style="padding-top: 40px;">
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-             <span class="rounded-circle mx-auto mb-3"><img src="img/logo2.png"></span>
-          </div>
+        <div class="row justify-content-md-center" style="padding-top: 40px;">
 
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <div class="col col-lg-4 col-md-4 mb-1">
              <span class="rounded-circle mx-auto mb-3"><img style="height: 120px;" src="img/logo3.png"></span>
           </div>
 
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <div class="col col-lg-4 col-md-4 mb-1">
              <span class="rounded-circle mx-auto mb-3"><img style="height: 112px;" src="img/logo4.png"></span>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <span class="rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
-            <h4>
-              <strong>Question</strong>
-            </h4>
-            <p class="text-faded mb-0">I mustache you a question...</p>
+          <div class="col col-lg-4 col-md-4 mb-1">
+             <span class="rounded-circle mx-auto mb-3"><img src="img/logo2.png"></span>
+          </div>
+
+          <div class="col col-lg-4 col-md-4 mb-1"">
+            <span class="rounded-circle mx-auto mb-3"><img style="height: 112px;" src="img/logo5.png"></span>
+          </div>
+
+          <div class="col col-lg-4 col-md-4 mb-1"">
+            <span class="rounded-circle mx-auto mb-3"><img style="height: 112px;" src="img/logo6.png"></span>
           </div>
         </div>
       </div>
