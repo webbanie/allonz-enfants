@@ -4,9 +4,14 @@
   jQuery(function(){
       jQuery("#P1").YTPlayer();
     });
+  //$('#directional-icons').css("display", "none");
+
 
 })(jQuery); // End of use strict
 //$('.ml7 .letters').css("display", "none").css("display", "inline-block");
+//$('#directional-icons').hide().delay(2000).show();
+//$('#directional-icons').fadeOut();
+//$('#directional-icons').fadeIn(3000);
 
 $('.ml7 .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
@@ -28,8 +33,25 @@ anime.timeline({loop: false})
     }
   });
 
+/*function FaireClignoterImage (){ 
+   $("#test").fadeOut(200).delay(50).fadeIn(500); 
+} */
+
+
 $( document ).ready(function() {
-  // Wrap every letter in a span
+
+
+
+
+function FaireClignoterImage (){
+  $("#directional-icons").fadeOut(200).stop().fadeIn(500);
+};
+setInterval('FaireClignoterImage()',1000);
+
+/*setTimeout(function() {
+  $('#directional-icons').css("display", "block");
+
+}, 2000);*/
 
 
 
@@ -46,21 +68,21 @@ var app = new Vue({
       { text: 'Build something awesome' }
     ]
   }
-})
+});
 
 var popUps = new Vue({
   el: '#pop-Ups',
   data: {
     items: [
       { 
-        title: "L'histoire du foot",
-        message: 'Une vidéo illustant la naissance du Football à nos jours',
-        image : 'image25'
+        title: "Mode d'emploi",
+        message: "Ici toutes les règles des activités",
+        image : 'image24'
       },
       { 
-        title: 'La dictée',
-        message: "Pour mémoriser et travailler l'orthographe",
-        image : 'image4'
+        title: "L'histoire du foot",
+        message: "Le Football d'hier à aujourd'hui",
+        image : 'image9'
       },
       { 
         title: 'Stop Motion',
@@ -69,12 +91,18 @@ var popUps = new Vue({
       },
     ]
   }
-})
+});
 
 var popUps2 = new Vue({
   el: '#pop-Ups2',
   data: {
     items2: [
+      { 
+        title: 'La dictée',
+        message: "Mémoriser et travailler l'orthographe",
+        image : 'image17',
+        link : 'http://foot.banlieues-creatives.org/dictee.pdf',
+      },
       { 
         title: 'Votre équipe de Football (JEU)',
         message: 'Imaginer et créer à votre envie',
@@ -82,18 +110,12 @@ var popUps2 = new Vue({
         link : 'http://foot.banlieues-creatives.org/jeu_foot/jeu2/index.html',
       },
       { 
-        title: 'Dessine pour les joueurs (JEU)',
-        message: 'Faire preuve de créativité et envoyer votre dessin à votre joueur favori',
+        title: 'Dessiner et Envoyer à votre joueur (JEU)',
+        message: 'Faire preuve de créativité',
         image : 'image25',
         link : 'http://foot.banlieues-creatives.org/jeu_foot/jeu1/page1.html',
       },
       
     ]
   }
-})
-
-var vm = new Vue({
-  data: {
-    
-  }
-})
+});
