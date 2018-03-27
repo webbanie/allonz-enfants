@@ -79,13 +79,6 @@
 
     </header>
 
-<!-- Button trigger modal  -->
-<button type="button" class="btn btn-primary" id="test" data-toggle="modal" data-target="#ModalCenter">
-  X
-</button>
-
-
-
     <!-- exercices -->
     <section class="content-section" id="exercices">
       <div class="container">
