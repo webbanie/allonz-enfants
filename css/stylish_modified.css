@@ -181,6 +181,9 @@ footer.footer {
     //padding-right: 20px !important;
     //margin-left: 20px;
   }
+  #directional-icons{
+    display: none;
+  }
   .content-section{
     padding: 0 0 2.5rem 0;
   }
