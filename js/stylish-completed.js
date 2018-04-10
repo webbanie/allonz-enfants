@@ -8,10 +8,7 @@
 
 
 })(jQuery); // End of use strict
-//$('.ml7 .letters').css("display", "none").css("display", "inline-block");
-//$('#directional-icons').hide().delay(2000).show();
-//$('#directional-icons').fadeOut();
-//$('#directional-icons').fadeIn(3000);
+
 
 $('.ml7 .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
@@ -33,27 +30,9 @@ anime.timeline({loop: false})
     }
   });
 
-/*function FaireClignoterImage (){ 
-   $("#test").fadeOut(200).delay(50).fadeIn(500); 
-} */
 
 
 $( document ).ready(function() {
-
-
-
-
-function FaireClignoterImage (){
-  $("#directional-icons").fadeOut(200).stop().fadeIn(500);
-};
-setInterval('FaireClignoterImage()',1000);
-
-/*setTimeout(function() {
-  $('#directional-icons').css("display", "block");
-
-}, 2000);*/
-
-
 
 });
 
