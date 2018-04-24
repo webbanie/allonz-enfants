@@ -63,7 +63,7 @@
       </div>
 
       <div id="directional-icons">
-        <i class="fa fa-soccer-ball-o" style="font-size:20px"> Découvrez</i>
+        <i class="fa fa-soccer-ball-o" style="font-size:20px;font: normal normal normal 14px/1 FontAwesome, sans-serif;text-transform:  uppercase;"> Découvrez</i>
         <i class="  fa fa-angle-down" style="font-size:36px"></i>
       </div>
       <!--
@@ -78,6 +78,13 @@
 
 
     </header>
+
+<!-- Button trigger modal 
+<button type="button" class="btn btn-primary" id="test" data-toggle="modal" data-target="#ModalCenter">
+  X
+</button> -->
+
+
 
     <!-- exercices -->
     <section class="content-section" id="exercices">
