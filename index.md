@@ -42,10 +42,10 @@
           <a class="js-scroll-trigger" href="#exercices">Activités Ludiques</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about">Le Kit Pédagogique</a>
+          <a class="js-scroll-trigger" href="#about">Kit Pédagogique</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#contributeurs">Les Contributeurs</a>
+          <a class="js-scroll-trigger" href="#contributeurs">Contributeurs</a>
         </li>
       </ul>
     </nav>
