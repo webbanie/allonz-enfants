@@ -36,13 +36,16 @@
           <a class="js-scroll-trigger" href="#page-top">Menu</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#page-top">Home</a>
+          <a class="js-scroll-trigger" href="#page-top">Accueil</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about">About</a>
+          <a class="js-scroll-trigger" href="#exercices">Activités Ludiques</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#exercices">Exercices</a>
+          <a class="js-scroll-trigger" href="#about">Le Kit Pédagogique</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contributeurs">Les Contributeurs</a>
         </li>
       </ul>
     </nav>
@@ -159,7 +162,7 @@
               <p class="lead mb-4">A votre disposition, ce kit pédagogique est composé de : 4 spots / 2 jeux interactifs / 1 dictée.</p> 
               <p class="lead mb-4">Vous pouvez tous les utiliser ou les organiser à votre guise, en fonction de votre emploi du temps et de votre classe composée ou non de «fanas».</p>
 
-              <a class="btn btn-dark btn-xl js-scroll-trigger" style="margin-top: 30px;" href="#services">Télécharger le kit</a>
+              <a class="btn btn-dark btn-xl js-scroll-trigger" style="margin-top: 30px;" href="http://foot.banlieues-creatives.org/kit_foot.zip">Télécharger le kit</a>
 
 
         </div>
@@ -171,7 +174,7 @@
 
 
     <!-- Services -->
-    <section class="content-section bg-primary text-white text-center" id="services">
+    <section class="content-section bg-primary text-white text-center" id="contributeurs">
       <div class="container">
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0">LES CONTRIBUTEURS</h3>
@@ -204,7 +207,7 @@
     <!-- Footer -->
     <footer class="footer text-center" style="background-color: white;">
       <div class="container">
-        <p class="text-muted small mb-0">Copyright &copy; Your Website 2017</p>
+        <p class="text-muted small mb-0">Copyright &copy; Permis de Vivre la Ville 2017</p>
       </div>
     </footer>
 
